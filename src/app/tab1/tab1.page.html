@@ -1,17 +1,31 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
+<ion-content class="ion-padding" color="tertiary">
+  <!-- Informações do cliente -->
   <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+    <ion-toolbar color="tertiary">
+      <ion-title size="large">Olá, Seu nome</ion-title>
+      <ion-card-subtitle>Seja bem-vindo à sua área privada</ion-card-subtitle>   
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <!-- Informações do card -->
+   <ion-card color="light">
+    <ion-card-header>
+      <ion-card-subtitle>Subtitle do Card</ion-card-subtitle>
+      <ion-card-title>Titulo do card</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Coloque suas informações
+    </ion-card-content>
+    <ion-card>
+      <ion-item>
+        <ion-label>Awesome Label</ion-label>
+      </ion-item>
+    </ion-card>
+   </ion-card>
+
+   <ion-card color="light">
+    <ion-card-header>
+      <ion-card-title>Awesome Title</ion-card-title>
+    </ion-card-header>
+   </ion-card>
 </ion-content>
